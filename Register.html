@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+    .btn {
+        color: white;
+        background-color: black; 
+    }
+    .title {
+        padding-left: 250px;
+        color: blue;
+    }
+    .field_pic {
+        margin-right: 900px;
+        background-image: url("Pic-For-Port.jpg");
+        background-size: 650px 250px;
+    }
+</style>
+
+<h1 class="title">Create an account</h1>
+
+<div>
+    <fieldset class="field_pic">
+    <form method="get" action="thanks.html">
+    <p>
+        <label for="firstName">
+            <span>First Name: </span>
+            <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="FirstName" firstName="userFirst" required>
+        <label for="LastName">
+            Last Name
+            <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="LastName" LastName="userLast" required>
+    </p>
+    <p>
+        <label for="email">
+            <span>Email: </span>
+            <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="email" email="email" required>
+        <label for="phone">
+            <span>Phone: </span>
+            <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="phone" phone="phone" required>
+    </p>
+    <p>
+        <label for="password">
+            <span>Password: </span>
+            <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="password" password="password" required minlength="4" maxlength="15">
+        <label for="confirmation">
+            <span>Confirm Password: </span>
+            <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="confirmation" confirmation="confirmation" required>
+        <br><br>
+        <button type="submit" style="margin-left: 250px; font-size: 20px">Submit</button>
+        </form>
+    </p>
+    </fieldset>
+</div>
+<div>
+    
+    <form method="get" action="login.html">
+        <button type="submit">Login</button >
+    </form>
+    <form method="get" action="forgotPassword.html">
+        <button type="submit" class="btn">Forgot Password</button>
+    </form>
+</div>
+</html>
